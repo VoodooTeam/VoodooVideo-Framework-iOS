@@ -1,0 +1,11 @@
+framework module VoodooVideoFramework {
+  umbrella header "VoodooVideoFramework-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module VoodooVideoFramework.Swift {
+    header "VoodooVideoFramework-Swift.h"
+    requires objc
+}
