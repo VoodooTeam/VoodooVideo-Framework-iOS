@@ -26,4 +26,6 @@ Pod::Spec.new do |s|
   s.preserve_paths      = "%s.framework" % [framework] 
   s.public_header_files = "%s.framework/**/*.h" % [framework] 
   s.vendored_frameworks = '%s.framework' % [framework] 
+  s.resources           = '%s.bundle' % [framework] 
+
 end
