@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'VoodooVideoFramework'
-  s.version          = '0.1.0'
+  s.version          = '0.1.2'
   s.summary          = 'Detect if user is European and present GDPR modal if needed'
 
   s.description      = <<-DESC
@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://www.voodoo.io'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Jennifer Lim' => 'jennifer@voodoo.io' }
-  s.source           = { :git => 'git@github.com:VoodooTeam/VoodooVideoFramework.git', :tag => s.version.to_s }
+  s.source           = { :git => 'git@github.com:VoodooTeam/VoodooVideo-Framework-iOS.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '11.0'
   s.swift_version = '5.0'
