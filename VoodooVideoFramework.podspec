@@ -15,14 +15,14 @@ Pod::Spec.new do |s|
   s.author           = { 'Jennifer Lim' => 'jennifer@voodoo.io' }
   s.source           = { :git => 'git@github.com:VoodooTeam/VoodooVideo-Framework-iOS.git', :tag => s.version.to_s }
 
-  framework = "VoodooVideoFramework"
   s.ios.deployment_target = '11.0'
   s.swift_version = '5.0'
   s.frameworks = 'AVFoundation', 'CoreTelephony', 'SystemConfiguration', 'AdSupport'
   s.static_framework = true
   s.dependency 'Google-Mobile-Ads-SDK'
 
-  s.source_files       = [ "%s.framework/**/*.{h,m}" % [framework] ]
+  framework             = s.name 
+  s.source_files        = [ "%s.framework/**/*.{h,m}" % [framework] ]
   s.preserve_paths      = "%s.framework" % [framework] 
   s.public_header_files = "%s.framework/**/*.h" % [framework] 
   s.vendored_frameworks = '%s.framework' % [framework] 
