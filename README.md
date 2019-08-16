@@ -4,15 +4,18 @@ This repo contains essentially the `.framework`, `.bundle` (= all the assets) of
 
 # How do we update this repo
 
-- Checkout the VoodooVideo repo: `https://github.com/VoodooTeam/VoodooVideo`
+1- Checkout the VoodooVideo repo: `https://github.com/VoodooTeam/VoodooVideo`
 
-- Build the project on Device:
+2- Build the project on a *real device*:
 Copy the `VoodooVideoFramework.framework` generated in `Pods pbxproj > Pods > VoodooVideoFramework`
 
-You should see in `VoodooVideoFramework.framework` > `Modules` > `VoodooVideoFramework.swiftmodule`: 
+Paste it in the root folder of this repo: `VoodooVideo-Framework-iOS`
+
+Note: You should see in `VoodooVideoFramework.framework` > `Modules` > `VoodooVideoFramework.swiftmodule`: 
 -> arm64.swiftdoc
 -> arm64.swiftmodule
 
-- Build the project on Simulator:
+3- Build the project on a *Simulator*:
+
 Copy `x86_64.swiftdoc`, `x86_64.swiftmodule` available here: `VoodooVideoFramework.framework` > `Modules` > `VoodooVideoFramework.swiftmodule`
 and paste in `VoodooVideoFramework.framework` > `Modules` > `VoodooVideoFramework.swiftmodule`.
