@@ -20,4 +20,4 @@ git add -A && git commit -m "Release $VERSION."
 git tag $VERSION
 git push --tags
 git push
-pod repo push VoodooSauce $POD_SPEC --allow-warnings
+pod repo push VoodooSauce $POD_SPEC --allow-warnings --verbose
