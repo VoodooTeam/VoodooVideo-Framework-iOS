@@ -22,10 +22,9 @@ Pod::Spec.new do |s|
   s.dependency 'Google-Mobile-Ads-SDK'
 
   framework             = s.name 
-  h_files =  "%s.framework/headers/VoodooVideoFramework.h" % [framework]
-  s.source_files        = [  h_files, 'mainVoodooVideo.swift']
+  s.source_files        = [ "%s.framework/**/*.{h,m}" % [framework] ]
   s.preserve_paths      = "%s.framework" % [framework] 
-  s.public_header_files = "%s.framework/headers/VoodooVideoFramework.h" % [framework] 
+  s.public_header_files = "%s.framework/**/*.h" % [framework] 
   s.vendored_frameworks = '%s.framework' % [framework] 
   s.resources           = '%s.bundle' % [framework] 
 
