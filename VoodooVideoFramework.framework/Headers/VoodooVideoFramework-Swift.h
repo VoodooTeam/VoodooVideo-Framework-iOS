@@ -267,7 +267,7 @@ SWIFT_CLASS("_TtC20VoodooVideoFramework11UnityBridge")
 
 SWIFT_PROTOCOL("_TtP20VoodooVideoFramework13UnityProtocol_")
 @protocol UnityProtocol
-- (void)showVideoWith:(CGFloat)percentX percentY:(CGFloat)percentY percentSize:(CGFloat)percentSize;
+- (void)showVideoWithX:(CGFloat)x y:(CGFloat)y width:(CGFloat)width;
 - (void)hideVideo;
 - (void)sendEventToDataCollectorWith:(NSString * _Nonnull)name;
 - (void)setDelegateWithDelegate:(id <UnityBridgeDelegate> _Nonnull)delegate;
@@ -276,6 +276,7 @@ SWIFT_PROTOCOL("_TtP20VoodooVideoFramework13UnityProtocol_")
 
 SWIFT_CLASS("_TtC20VoodooVideoFramework12VideoPreview") SWIFT_AVAILABILITY(ios,introduced=11.0)
 @interface VideoPreview : UIView
+@property (nonatomic) CGRect frame;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
 @end
@@ -314,7 +315,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL forceTest;)
 
 
 @interface VoodooVideo (SWIFT_EXTENSION(VoodooVideoFramework)) <UnityProtocol>
-- (void)showVideoWith:(CGFloat)percentX percentY:(CGFloat)percentY percentSize:(CGFloat)percentSize;
+- (void)showVideoWithX:(CGFloat)x y:(CGFloat)y width:(CGFloat)width;
 - (void)hideVideo;
 - (void)sendEventToDataCollectorWith:(NSString * _Nonnull)name;
 - (void)setDelegateWithDelegate:(id <UnityBridgeDelegate> _Nonnull)delegate;
