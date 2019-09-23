@@ -303,6 +303,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class) DelegateVoodooVideoReadyToShow
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL isVVShown;)
 + (BOOL)isVVShown SWIFT_WARN_UNUSED_RESULT;
 + (void)setIsVVShown:(BOOL)value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL consent;)
++ (BOOL)consent SWIFT_WARN_UNUSED_RESULT;
++ (void)setConsent:(BOOL)value;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL forceTest;)
 + (BOOL)forceTest SWIFT_WARN_UNUSED_RESULT;
 + (void)setForceTest:(BOOL)newValue;
@@ -632,6 +635,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class) DelegateVoodooVideoReadyToShow
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL isVVShown;)
 + (BOOL)isVVShown SWIFT_WARN_UNUSED_RESULT;
 + (void)setIsVVShown:(BOOL)value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL consent;)
++ (BOOL)consent SWIFT_WARN_UNUSED_RESULT;
++ (void)setConsent:(BOOL)value;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL forceTest;)
 + (BOOL)forceTest SWIFT_WARN_UNUSED_RESULT;
 + (void)setForceTest:(BOOL)newValue;

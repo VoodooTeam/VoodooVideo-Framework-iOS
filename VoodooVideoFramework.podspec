@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'VoodooVideoFramework'
-  s.version          = '1.0.13'
+  s.version          = '1.0.14'
   s.summary          = 'Detect if user is European and present GDPR modal if needed'
 
   s.description      = <<-DESC
